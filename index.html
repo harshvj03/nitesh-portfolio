@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nitesh Singh – Portfolio</title>
+  <meta name="description" content="Portfolio website of Nitesh Kumar Singh – results‑driven sales leader with 8+ years in B2B technology sales, IoT telematics, and market expansion." />
+  <style>
+    :root{
+      --bg: #0b1220;         /* deep blue background */
+      --card: #111827;       /* slate-900 */
+      --muted: #9ca3af;      /* gray-400 */
+      --text: #e5e7eb;       /* gray-200 */
+      --accent: #60a5fa;     /* blue-400 */
+      --accent-2: #34d399;   /* emerald-400 */
+      --ring: rgba(96,165,250,.45);
+      --shadow: 0 10px 25px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px); background:rgba(11,18,32,.75); border-bottom:1px solid rgba(255,255,255,.05)}
+    nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+    nav .brand{font-weight:800; letter-spacing:.2px}
+    nav .brand span{color:var(--accent)}
+    nav .links a{margin:0 10px; padding:8px 10px; border-radius:12px}
+    nav .links a:hover{background:rgba(255,255,255,.06)}
+
+    /* Hero */
+    .hero{display:grid; grid-template-columns:1.15fr .85fr; gap:32px; padding:64px 0}
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:20px; box-shadow:var(--shadow)}
+    .hero .summary{padding:28px}
+    .pill{display:inline-flex; gap:8px; align-items:center; background:rgba(52,211,153,.1); color:#d1fae5; border:1px solid rgba(52,211,153,.35); padding:6px 12px; border-radius:999px; font-size:13px}
+    .title{font-size:40px; line-height:1.1; margin:14px 0 10px; letter-spacing:.2px}
+    .subtitle{color:var(--muted)}
+    .cta{display:flex; gap:12px; margin-top:20px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:14px; border:1px solid rgba(255,255,255,.1); background:#111827}
+    .btn.primary{background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:#071018; font-weight:700; border:none}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 10px 18px rgba(0,0,0,.25)}
+    .contact{padding:20px 24px}
+    .contact .row{display:flex; gap:18px; flex-wrap:wrap}
+    .contact a{display:flex; align-items:center; gap:8px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.06); padding:10px 12px; border-radius:12px}
+
+    /* Sections */
+    section{padding:42px 0}
+    section h2{font-size:26px; letter-spacing:.3px; margin:0 0 16px}
+    .grid{display:grid; gap:18px}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+
+    /* Experience */
+    .exp{display:grid; gap:16px}
+    .item{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:18px; padding:18px}
+    .item h3{margin:0 0 6px; font-size:18px}
+    .item .meta{font-size:14px; color:var(--muted)}
+    .item ul{margin:10px 0 0 18px}
+    .item li{margin:6px 0}
+
+    /* Skills */
+    .chips{display:flex; flex-wrap:wrap; gap:10px}
+    .chip{background:rgba(96,165,250,.12); border:1px solid var(--ring); padding:8px 12px; border-radius:12px; font-size:14px}
+
+    /* Footer */
+    footer{padding:36px 0 60px; color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid.cols-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Nitesh <span>Singh</span></div>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#interests">Interests</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card summary">
+        <span class="pill">🚀 Results‑driven Sales Leader</span>
+        <h1 class="title">Hi, I'm Nitesh Kumar Singh</h1>
+        <p class="subtitle">8+ years in technology‑driven B2B sales—currently managing IoT telematics & sensor solutions across North India. Proven at scaling regions, leading high‑performing teams, and exceeding revenue targets across logistics, heavy industry, data centers, and manufacturing.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Work with me</a>
+          <a class="btn" href="#experience">View my experience</a>
+        </div>
+      </div>
+      <div class="card contact">
+        <h2 style="margin:0 0 8px">Quick Contact</h2>
+        <div class="row">
+          <a href="tel:+917844005560">📞 +91 7844005560</a>
+          <a href="mailto:singhniteshkumar066@gmail.com">✉️ singhniteshkumar066@gmail.com</a>
+          <a href="https://maps.app.goo.gl/" target="_blank" rel="noreferrer noopener">📍 Omega Green Park, Lucknow‑226028</a>
+          <a href="#" onclick="alert('You can replace this with a link to your hosted resume (PDF) when you upload it).'); return false;">⬇️ Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="card" style="padding:18px">
+        <p>
+          Accomplished sales leader with extensive experience in driving market expansion, managing high‑performance teams, and building strategic client relationships. Expert in enterprise sales, channel development, and GTM alignment. Adept at cross‑functional leadership, operational excellence, and consistently achieving ambitious targets.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="exp">
+        <div class="item">
+          <h3>Area Sales Manager – Intangles Lab Pvt Ltd</h3>
+          <div class="meta">Feb 2024 – Present • IoT after‑OEM telematics • North India</div>
+          <ul>
+            <li>Spearhead regional sales across logistics & industrial segments; drive direct & enterprise sales.</li>
+            <li>Recruited and lead a high‑performing team; expanded presence in critical sub‑regions.</li>
+            <li>Oversee end‑to‑end service delivery to ensure retention and satisfaction.</li>
+            <li>Formulated advanced market expansion strategies and aligned activities to annual sales & marketing plans.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Zonal Head – UP East, Fleetx Technologies Pvt Ltd</h3>
+          <div class="meta">Feb 2022 – Feb 2024</div>
+          <ul>
+            <li>Launched the territory and established a strong regional presence from the ground up.</li>
+            <li>Drove new account development via technical presentations and strategic use of support services.</li>
+            <li>Recruited, trained, and managed team; ensured exceptional delivery & client satisfaction.</li>
+            <li>Contributed to annual Sales & Marketing plan; monitored pipeline to consistently meet targets.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Area Manager – B2B, Cars24 Services Pvt Ltd</h3>
+          <div class="meta">May 2021 – Jan 2022 • Uttar Pradesh</div>
+          <ul>
+            <li>Built strategic partnerships with New Car Dealerships; hired KAMs & evaluator engineers.</li>
+            <li>Launched & scaled operations in UP starting with Lucknow; led sales force operations.</li>
+            <li>Drove performance monitoring, team development, and recruitment to meet objectives.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Manager – Corporate Sales (UP East), 99acres.com</h3>
+          <div class="meta">Aug 2018 – Jan 2021</div>
+          <ul>
+            <li>Managed corporate sales & client engagement, consistently achieving targets.</li>
+            <li>Delivered tailored business solutions and maintained long‑term relationships.</li>
+            <li>Conducted market research to enhance brand visibility & growth opportunities.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Demand Manager – Corporate Channel (UP East), OYO Rooms</h3>
+          <div class="meta">Jul 2016 – Aug 2018</div>
+          <ul>
+            <li>Managed official hospitality solutions for corporate clients across the region.</li>
+            <li>Empanelled new hotels/properties and optimized corporate discount offerings.</li>
+            <li>Drove incremental revenue via targeted outreach and strategic relationships.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Intern – IMRB</h3>
+          <div class="meta">May 2015 – Jun 2015</div>
+          <ul>
+            <li>Analyzed corporate spending behaviors and payment modes to optimize strategies.</li>
+            <li>Assessed perspectives on purchase/meeting & individual corporate cards.</li>
+            <li>Identified and capitalized on untapped client opportunities in NCR.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card" style="padding:18px">
+        <div class="chips">
+          <span class="chip">Strategic Sales Leadership</span>
+          <span class="chip">Team Development & Management</span>
+          <span class="chip">Client Relationship Management</span>
+          <span class="chip">Market Research & Analysis</span>
+          <span class="chip">Performance Monitoring & Pipeline</span>
+          <span class="chip">Cross‑Functional Collaboration</span>
+          <span class="chip">Negotiation & Persuasion</span>
+          <span class="chip">Target Achievement & Revenue Growth</span>
+          <span class="chip">Presentation & Communication</span>
+          <span class="chip">Operational Efficiency & Problem Solving</span>
+          <span class="chip">IoT Telematics (After‑OEM)</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid cols-2">
+        <div class="item">
+          <div class="card" style="padding:18px">
+            <h3 style="margin:0">PGDM – Finance & Marketing</h3>
+            <div class="meta">May 2016 • Jaipuria Institute of Management, Lucknow</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card" style="padding:18px">
+            <h3 style="margin:0">B.Com – Kanpur University</h3>
+            <div class="meta">Apr 2014</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <h2>Activities & Interests</h2>
+      <div class="card" style="padding:18px">
+        <ul>
+          <li>Coordinator, Discipline Committee – Jaipuria Institute of Management, Lucknow.</li>
+          <li>Co‑organized Innovation & Incubation Centre (IIC) events encouraging entrepreneurship.</li>
+          <li>Conference attendee – AIMA (2015).</li>
+          <li>Travel enthusiast; community service with various NGOs.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card" style="padding:18px">
+        <p>Open to opportunities in tech/IoT/software sales, market expansion, and leadership roles. For collaborations or roles in Uttar Pradesh or PAN‑India, reach out:</p>
+        <p><strong>Phone:</strong> <a href="tel:+917844005560">+91 7844005560</a> &nbsp;•&nbsp; <strong>Email:</strong> <a href="mailto:singhniteshkumar066@gmail.com">singhniteshkumar066@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px">
+        <div>© <span id="y"></span> Nitesh Singh. All rights reserved.</div>
+        <div style="font-size:14px">Built with vanilla HTML/CSS • Single‑file for super‑easy hosting</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
